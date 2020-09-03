@@ -4,7 +4,8 @@ html {
 
 @media (min-width: 800px) {
     #mid { 
-        margin: 15%;
+        margin: auto;
+        width: 70%;
         display: grid;
         grid-template-rows: 120px auto;    
         grid-template-columns: 280px auto;
@@ -32,12 +33,14 @@ html {
 
 @media (max-width: 800px) {
     #mid { 
-        margin: 15%;
+        margin: auto;
+        width: 80%;
         display: grid;
         grid-template-areas: 
             "a"
             "b"
             "c";
+        
     }
 
     #top-container {
