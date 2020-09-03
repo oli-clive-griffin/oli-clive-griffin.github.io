@@ -4,7 +4,7 @@ html {
 
 @media (min-width: 800px) {
     #mid { 
-        margin: 200px;
+        margin: 15%;
         display: grid;
         grid-template-rows: 120px auto;    
         grid-template-columns: 280px auto;
@@ -12,7 +12,48 @@ html {
             "a a"
             "b c";
     }
+
+    #top-container {
+        position: fixed;
+        top: 200px;
+        left: 15%;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 320px;
+        left: 15%;
+    }
+
+    #right-container {
+        grid-area: c;
+    }
 }
+
+@media (max-width: 800px) {
+    #mid { 
+        margin: 15%;
+        display: grid;
+        grid-template-areas: 
+            "a"
+            "b"
+            "c";
+    }
+
+    #top-container {
+        grid-area: a;
+    }
+
+    #navbar {
+        grid-area: b;
+    }
+
+    #right-container {
+        grid-area: c;
+    }
+}
+
+
 
 .navbar-link, a {
     color: black;
@@ -37,21 +78,12 @@ html {
 }
 
 .blog-post {
+    display: grid;
+    grid-template-rows: auto auto;
     margin-bottom: 300px;
 }
 
-#top-container {
-    grid-area: a;
-}
 
-#left-container {
-    grid-area: b;
-}
-
-#right-container {
-    width: auto; 
-    grid-area: c;
-}
 
 h2 {
     padding: 0px;
