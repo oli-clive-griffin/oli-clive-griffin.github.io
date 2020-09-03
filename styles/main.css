@@ -5,16 +5,55 @@ html {
 @media (min-width: 800px) {
     #mid { 
         margin: 200px;
-
+        display: grid;
+        grid-template-rows: 120px auto;    
+        grid-template-columns: 280px auto;
+        grid-template-areas: 
+            "a a"
+            "b c";
     }
 }
 
-.homepage-link {
-    font-style: italic;
+.navbar-link, a {
     color: black;
     text-decoration: none;
+    margin: 0px; 
+}
+
+.navbar-link:hover, .current-navbar-link {
+    background-color: black;
+    color: white;
 }
 
 #titles {
     margin-bottom: 80px;
+}
+
+.blog-post-date {
+    font-family: monospace;
+    font-size: 1.5em;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    margin-bottom: 300px;
+}
+
+#top-container {
+    grid-area: a;
+}
+
+#left-container {
+    background-color:;
+    grid-area: b;
+}
+
+#right-container {
+    width: auto; 
+    grid-area: c;
+}
+
+h2 {
+    padding: 0px;
 }
