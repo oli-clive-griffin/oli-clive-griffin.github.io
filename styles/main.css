@@ -35,14 +35,15 @@ html {
   #blog-box-container {
     grid-area: b;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: min-content;
     grid-template-columns: 1fr 1fr;
     column-gap:20px;
     row-gap:20px;
   }
 
   .blog-box {
-    height: 250px;
+    height: auto;
+    min-height: 250px;
     padding: 0px;
     position: relative;
     top:0px;
