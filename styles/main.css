@@ -15,7 +15,7 @@ html {
   }
 
   #top-container {
-    width:280px;
+    width:auto;
     height: 170px;
     position: fixed;
     top: 150px;
