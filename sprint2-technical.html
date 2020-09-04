@@ -21,33 +21,36 @@
             </div>
             <div id="right-container"> 
                 <section class="blog-post">
+                    <h1 class="blog-post-title"> CSS positioning </h1>
+
                     <heading class="blog-post-date"> friday 4 septmeber, 2022 </heading>
                     <article> 
+                        <p class="body-paragraph">one of the most important uses of CSS is to position html elemtents on the page. we will be covering 4 of the most common types of css positioning</p>
 
-                        <h4>position: static</h4>
+                        <h3>position: static</h3>
                         <p class="body-paragraph"> The default. this makes the element move with the elements surrounding it just as normal. you would</p>
                         <br>
 
-                        <h4>position: relative</h4>
+                        <h3>position: relative</h3>
                         <p class="body-paragraph">relative positioning is a way to offset an element, relative to where it originally was. consider the following example:</p>
                         <br>
                         <img src="images/relative-example-1.png"> 
                         <br>
-                        <p class="body-paragraph">This website would load almost completely normally, the heading would just be moved 100px to the right. none of the other elements would be affected by this change either, even if the move caused them to overlap. It's as if, when loading a page with a relative position element, all of the elements get in their places, ready for the page to be displayed, but at the last minute, the CSS decides that one element (our relative positioned element) should be moved. none of the other elements even get a chance to react, and the space that our relative element used to be in is left empty, as if someone is savings it's spot in line.</p>
+                        <p class="body-paragraph">The divs load almost completely normally, however, the pink div is moved 5px down and 20px to the left. none of the other elements are  affected by this change either, even though the move caused some of them to overlap. It's as if, when loading a page with a relative position element, all of the elements get in their places, ready for the page to be displayed, but at the last minute, the CSS decides that one element should be moved. none of the other elements even get a chance to react, and the space that our relative element used to be in is left empty, as if someone is savings it's spot in line.</p>
                         <p class="body-paragraph">relative positioning is not used very often, apart from one particular use case. which will be explained below:</p>
                         <br>
 
-                        <h4>position: absolute</h4>
+                        <h3>position: absolute</h3>
                         <p class="body-paragraph">positions the element relative to the next parent element that has a position (apart from static, as this is the default). if none of the parent elements have a position of fixed, relative, absolute, or sticky, the the element will position itself relative to the entire page.</p>
                         <p class="body-paragraph">This is very powerful because it allows you to forcefully place anything on the page in a specific location, or within a parent element, as if it were a sticker that you could stick on top of everything else.</p>
                         <p class="body-paragraph">elements positioned with absolute will be removed from the document flow, meaning as far as the other elements are concerned, our absolute element doesn't exist.</p>
                         <p class="body-paragraph">note that elements positioned with absolute scroll just like the rest of the page.</p>
                         <br>
 
-                        <h4>position: relative (continued)</h4>
+                        <h3>position: relative (continued)</h3>
                         <p class="body-paragraph">now that we understand absolute positioning, we can go through one very popular use of relative positioning. using the following example:</p>
                         <br>
-                        <img src="images/relative-continued-example-1.png"> 
+                        <img src="images/relative-continued-example-1.png">
                         <br>
                         <p class="body-paragraph">say we want to position the pink square 100px from the top, and 50px from the left of the blue square. we might try to use absolute positioning. but if we tried to do that, we would find that the pink square is not using the blue square as a basis for the positioning, but is instead positioning itself relative to the page.</p>  
                         <br>
@@ -63,16 +66,29 @@
                         <p class="body-paragraph">by telling the blue square to position itself relative to it's original position, but nothing more, we  make no change to the position of the blue square. However, the pink square now recognizes the blue square as a non-static parent element and positions itself relative to the blue square. Problem solved!</p>
                         <br>
                         
-                        <h4>position: fixed</h4>
+                        <h3>position: fixed</h3>
                         <p class="body-paragraph">the fixed position is very similar to absolute, in that it allows you to forcefully position an element anywhere on the page, outside of the document flow. However, there is a key difference, fixed elements align themselves according to the view window, meaning even as the page scrolls, they stay in the same place. for this reason, fixed positioning is often used to create navigation bars that stay at the top of the screen as you scroll.</p>  
                         <p class="body-paragraph">think of fixed positioning as sticking an element physically to your computer screen. it it completely removed from the rest of the page and both it and the rest of the page act like the other doesn't exist. </p>
                         <p class="body-paragraph">in the following example, the pink heading div is positioned inside of the blue containing div, when we scroll, everything is fixed on the page and moves up up we scroll down.</p>
+                        <br>
                         <img src="images/fixed-example-1.png">
+                        <br>
                         <p class="body-paragraph">however, we can stick this div in place if we wanted by switching it's positioning to fixed</p>
-                        <img src="images/fixed-example-2.png">
+                        
+                        <br>
+                        <video controls> 
+                            <source src="images/fixed-example-2.mov">
+                        </video>
+                        <br>
+
                         <p class="body-paragraph">note that this freezes the div in place but also changes it's width and causes it to overlap the paragraph text. This is because using fixed positioning takes the element out of the document flow, stopping all interaction between it and the other elements. when this happens, the paragraph div snaps up to take it's place, and it shrinks to a width of auto because it's no longer automatically filling the width of the blue div.</p>
                         <p class="body-paragraph">we can also take this one step further and create a top navigation bar by positioning it 0px from the top and left, and changing it's width to 100%.</p>
-                        <img src="images/fixed-example-3.png">
+                        
+                        <br>
+                        <video controls> 
+                            <source src="images/fixed-example-3.mov">
+                        </video>
+                        <br>
 
                     </article>
                 </section>

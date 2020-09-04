@@ -67,10 +67,16 @@ html {
 .navbar-link:hover, .current-navbar-link {
     background-color: black;
     color: white;
+    padding:2px 5px;
+
 }
 
 #titles {
     margin-bottom: 80px;
+}
+
+.blog-post-title {
+
 }
 
 .blog-post-date {
@@ -90,4 +96,9 @@ html {
 
 h2 {
     padding: 0px;
+}
+
+img, video { 
+    width:100%;
+
 }
