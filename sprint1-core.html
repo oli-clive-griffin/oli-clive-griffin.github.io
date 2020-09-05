@@ -22,72 +22,36 @@
         </div>
         <div id="right-container"> 
           <section class="blog-post">
-            <h1 class="blog-post-title"> CSS positioning </h1>
-            <heading class="blog-post-date"> friday 4 septmeber, 2022 </heading>
-            <article> 
-              <p class="body-paragraph">one of the most important uses of CSS is to position html elemtents on the page. we will be covering 4 of the most common types of css positioning</p>
-              <h3>position: static</h3>
-              <p class="body-paragraph"> The default. this makes the element move with the elements surrounding it just as normal. you would</p>
+            <h1 class="blog-post-title"> Core 1 - identity and values</h1>
+            <heading class="blog-post-date"> Wednesday september 2, 2020 </heading>
+            <article>
+
+              <p class="c1-question">Explain a situation where you have had an ethical decision to make. Discuss how you weighed up the values involved in that decision, the decision you made and the consequences of the action you took.</p>
+              <p class="body-paragraph"> I honestly can't think of a serious ethical decision I've had to make recently. But rather a set of small ones. I've been working in my parents restaurant/cinema over the winter and the busiest days it gets really, really busy. Sometimes when I'd dropped the ball in some way or another - forgetting to put a customer's order through, forgetting to clean a cinema - I'd instinctively tell white lies to cover up for myself. After doing this a few times, I noticed what I was doing and was quite disappointed with myself. I'd always thought I was a radically honest person. but under stress, and when being held accountable by my workmates, I had allowed my standards to slip. since that, and especially since dwelling on this idea while doing this exercise, I've committed to being that same radically honest person I have been in the past</p>
               <br>
 
-              <h3>position: relative</h3>
-              <p class="body-paragraph">relative positioning is a way to offset an element, relative to where it originally was. consider the following example:</p>
-              <br>
-              <img src="media/relative-example-1.png"> 
-              <br>
-              <p class="body-paragraph">The divs load almost completely normally, however, the pink div is moved 5px down and 20px to the left. none of the other elements are  affected by this change either, even though the move caused some of them to overlap. It's as if, when loading a page with a relative position element, all of the elements get in their places, ready for the page to be displayed, but at the last minute, the CSS decides that one element should be moved. none of the other elements even get a chance to react, and the space that our relative element used to be in is left empty, as if someone is savings it's spot in line.</p>
-              <p class="body-paragraph">relative positioning is not used very often, apart from one particular use case. which will be explained below:</p>
+              <p class="c1-question">Describe how your culture has influenced your values and identity.</p>
+              <p class="body-paragraph"> My family culture is very heavily focussed on taking responsibility. People who complain or seek handouts form others are not looked upon kindly in my family. My Mum has always told me that it's my responsibility to fix my own problems. As a kid, I found  that confusing as I thought that most of my problems were other people's fault. But, growing up, I began to understand what she'd meant. Even if the problems weren't my fault, no one else was going to fix them for me. They may not have been my fault (however, many times, they were) but they were always my responsibility and blaming others was not going to change that in the slightest.</p>
+              <p class="body-paragraph"> Growing up with very encouraging, self employed parents, I always had a high expectation for what life could be for me. In my family culture, success was always praised and never demonized as it often is in pop-culture. A 'normal' job with an average salary was never even a consideration for me. while others in my year group may have changed their dream job from astronaut to something more realistic, my goals haven't shrunk.</p>
+              <p class="body-paragraph"> Kindness was also a hugely important value in my upbringing. My Mum always expected me to be the kid who included the uncool kids. She made a big deal of the seniors who took me under their wing and the kids who included me in games so that I could learn how special that can be. She constantly reminded me that my granddad 'never made a joke at someone else's expense' and although that may be a bit of a strict rule to follow (who doesn't like a bit of teasing with friends) the point still stands.</p>
               <br>
 
-              <h3>position: absolute</h3>
-              <p class="body-paragraph">positions the element relative to the next parent element that has a position (apart from static, as this is the default). if none of the parent elements have a position of fixed, relative, absolute, or sticky, the the element will position itself relative to the entire page.</p>
-              <p class="body-paragraph">This is very powerful because it allows you to forcefully place anything on the page in a specific location, or within a parent element, as if it were a sticker that you could stick on top of everything else.</p>
-              <p class="body-paragraph">elements positioned with absolute will be removed from the document flow, meaning as far as the other elements are concerned, our absolute element doesn't exist.</p>
-              <p class="body-paragraph">note that elements positioned with absolute scroll just like the rest of the page.</p>
+              <p class="c1-question">Evaluate your strengths and limitations in terms of your learning and career development</p>
+              <p class="body-paragraph"> I think my ambition is going to be very helpful for me in my career (duh). I believe a lot of people are capable of a lot more than they let on and if they were to let themselves want more, a lot might actually get it.</p>
+              <p class="body-paragraph"> I've also become far more disciplined this year. after leaving school, it's like a switch was flicked and stuff actually matters now. as if i've finally landed in the real world. However, I still have a way to go. I was lazy in school so although I've improved a lot, I’ve got a way to go.</p>
               <br>
 
-              <h3>position: relative (continued)</h3>
-              <p class="body-paragraph">now that we understand absolute positioning, we can go through one very popular use of relative positioning. using the following example:</p>
-              <br>
-              <img src="media/relative-continued-example-1.png">
-              <br>
-              <p class="body-paragraph">say we want to position the pink square 100px from the top, and 50px from the left of the blue square. we might try to use absolute positioning. but if we tried to do that, we would find that the pink square is not using the blue square as a basis for the positioning, but is instead positioning itself relative to the page.</p>  
-              <br>
-              <img src="media/relative-continued-example-2.png">
-              <br>
-              <p class="body-paragraph">this is because none of the parent elements of the pink square have non-static positioning, so by default, it is using the page itself as the basis for it's position: 100px from the top and 50px from the left.</p>  
-              <p class="body-paragraph">we can fix this by making the blue square - the pink square's parent element - position: relative.</p>  
-              <p class="body-paragraph">"but won't this change the position of the blue square??"</p>
-              <p class="body-paragraph">no, and this is why relative positioning is so useful. if we use position: relative, but simply don't give it any extra rules, it will position itself exactly in it's original position, without moving.</p>
-              <br>
-              <img src="media/relative-continued-example-3.png">
-              <br>
-              <p class="body-paragraph">by telling the blue square to position itself relative to it's original position, but nothing more, we  make no change to the position of the blue square. However, the pink square now recognizes the blue square as a non-static parent element and positions itself relative to the blue square. Problem solved!</p>
-              <br>
-              
-              <h3>position: fixed</h3>
-              <p class="body-paragraph">the fixed position is very similar to absolute, in that it allows you to forcefully position an element anywhere on the page, outside of the document flow. However, there is a key difference, fixed elements align themselves according to the view window, meaning even as the page scrolls, they stay in the same place. for this reason, fixed positioning is often used to create navigation bars that stay at the top of the screen as you scroll.</p>  
-              <p class="body-paragraph">think of fixed positioning as sticking an element physically to your computer screen. it it completely removed from the rest of the page and both it and the rest of the page act like the other doesn't exist. </p>
-              <p class="body-paragraph">in the following example, the pink heading div is positioned inside of the blue containing div, when we scroll, everything is fixed on the page and moves up up we scroll down.</p>
-              <br>
-              <img src="media/fixed-example-1.png">
-              <br>
-              <p class="body-paragraph">however, we can stick this div in place if we wanted by switching it's positioning to fixed</p>
-              
-              <br>
-              <video controls> 
-                <source src="media/fixed-example-2.mov">
-              </video>
+              <p class="c1-question">Identify which of your strengths might help you in your learning journey and how they might intersect with learning obstacles.</p>
+              <p class="body-paragraph">The discipline I’ve developed this year will undoubtedly help me. This discipline will allow me to push myself to continue when I’m struggling. Quite self explanatory.</p>
+              <p class="body-paragraph">I’m very competitive. This has always helped me academically and I have no doubt it will at EDA. However, I will also need to keep this in check, making sure I’m focussing on doing what’s best for my own learning, instead of what looks best or gets me ahead the most.</p>
+              <p class="body-paragraph">I think my wide range of miscellaneous computer skills will help a lot. Born in 2001 and growing up as somewhat of a computer geek, I was practically raised on the internet and computers, so I know lots of tips and tricks that I believe will all add together to make me far more efficient.</p>
+              <p class="body-paragraph">I have a clear drive. I think when I was lazy in school, it was almost always because the work seemed pointless. With EDA, I chose to go here for a very specific reason, and have clear goals in mind that necessitate the learning we are doing. Where, at school, I procrastinated and lacked focus, it will be (and in fact, already has been) different at EDA because of this drive and clarity.</p>
+              <p class="body-paragraph">I’m very logical and good at problem solving. This has been, and will be helpful for the technical side of EDA, however I need to try and somewhat deactivate this side of me when doing the core work, as I tend to over-analyze questions and think in hyper-black-and-white terms.</p>
               <br>
 
-              <p class="body-paragraph">note that this freezes the div in place but also changes it's width and causes it to overlap the paragraph text. This is because using fixed positioning takes the element out of the document flow, stopping all interaction between it and the other elements. when this happens, the paragraph div snaps up to take it's place, and it shrinks to a width of auto because it's no longer automatically filling the width of the blue div.</p>
-              <p class="body-paragraph">we can also take this one step further and create a top navigation bar by positioning it 0px from the top and left, and changing it's width to 100%.</p>
-              
-              <br>
-              <video controls> 
-                <source src="media/fixed-example-3.mov">
-              </video>
-              <br>
+              <p class="c1-question">Share an example from your experience of where you were trying to work productively with others, but there was resistance or tension. Discuss the strategies you used at that time, how effective they were, and your reflections on what other strategies you would try now, and why</p>
+              <p class="body-paragraph">When making coffee, the coffee needs to be taken to the table as soon as possible after it’s created, because coffee quickly degrades when left sitting there for too long. I’ve found it very difficult and frustrating to get waiters to take my coffees as quickly as I would like. I tried asking the waiters/waitresses to take them every time but this always felt wrong as I was this 18 year old boy ordering around people far older than me. This in turn created frustration within myself that there wasn’t an easier way. Eventually, my manager told me to simply say “drinks up” loudly and clearly. I felt self-conscious doing this at first, but as I’ve done it more and more, it’s become more natural and at the end of the day, it’s what needs to happen as the most important thing is the customer getting their coffee on time.</p>
+              <p class="body-paragraph">Going through this process again, I would discuss the problem more openly with the waiters and waitresses, coming to the decision together that coffees should be the number 1 priority. It turns out that this would have solved a lot of the problem, as there had been a misunderstanding within the staff about the proper order of priorities. After this was sorted out with the manager, things began to run far more smoothly.</p>
 
             </article>
           </section>

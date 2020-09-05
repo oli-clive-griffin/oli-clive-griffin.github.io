@@ -116,6 +116,8 @@ html {
   background-color: black;
   color: white;
   padding:2px 5px;
+  position: relative;
+  left: -5px;
 
 }
 
@@ -123,14 +125,11 @@ html {
   margin-bottom: 80px;
 }
 
-.blog-post-title {
-}
-
 .blog-post-date {
   font-family: monospace;
   font-size: 1.5em;
   color: grey;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .blog-post {
@@ -139,6 +138,10 @@ html {
   margin-bottom: 300px;
 }
 
+.c1-question {
+  font-style: italic;
+  color:rgb(100, 100, 100);
+}
 
 
 h2 {
