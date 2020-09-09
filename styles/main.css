@@ -9,7 +9,7 @@ html {
     height: auto;
     display: grid;
     grid-template-rows: 120px auto;    
-    grid-template-columns: 280px auto;
+    grid-template-columns: 400px auto;
     grid-template-areas: 
       "a b";
   }
@@ -19,13 +19,11 @@ html {
     height: 170px;
     position: fixed;
     top: 150px;
-    left: 15%;
   }
 
   #navbar {
     position: fixed;
     top: 320px;
-    left: 15%;
   }
 
   #right-container {
@@ -43,21 +41,28 @@ html {
 
   .blog-box {
     height: auto;
-    height: 250px;
     padding: 0px;
     position: relative;
     top:0px;
   }
 
-  #opaque {
+  #landing-right-container {
+    grid-area: b;
+  }
+  #black-drop {
+    background-color: black;
+    height: 200vw;
+    width: calc(85% - 400px);
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-    pointer-events: none;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  #landing-head {
+    font-size: 5em;
+    color:white;
+
   }
 }
 
@@ -92,19 +97,7 @@ html {
     position: relative;
     top:0px;
   }
-
-  #opaque {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-  }
 }
-
-
 
 .navbar-link, a {
   color: black;
@@ -119,6 +112,17 @@ html {
   position: relative;
   left: -5px;
 
+}
+
+#opaque {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 #titles {
