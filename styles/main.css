@@ -62,7 +62,7 @@ html {
 
 @media (max-width: 800px) {
   #mid { 
-    margin: auto;
+    margin: 30px auto;
     width: 80%;
     display: grid;
     grid-template-areas: 
@@ -82,7 +82,21 @@ html {
 
   #right-container {
     grid-area: c;
-    column-gap:10px;
+    row-gap:10px;
+  }
+
+  #index-top-container {
+    width:auto;
+    height: 170px;
+    position: fixed;
+    top: 150px;
+    left: 15%;
+  }
+
+  #index-navbar {
+    position: fixed;
+    top: 320px;
+    left: 15%;
   }
 
   .blog-box {
@@ -149,5 +163,24 @@ h2 {
 
 img, video { 
   width:100%;
+
+}
+
+#top-bar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  justify-content: center;
+  align-content: center;
+}
+
+#top-bar-head {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  margin: auto;
 
 }
