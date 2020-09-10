@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (min-width: 800px) {
@@ -9,7 +9,7 @@ html {
     height: auto;
     display: grid;
     grid-template-rows: 120px auto;    
-    grid-template-columns: 400px auto;
+    grid-template-columns: 300px auto;
     grid-template-areas: 
       "a b";
   }
@@ -48,11 +48,12 @@ html {
 
   #landing-right-container {
     grid-area: b;
+    padding: 1em;
   }
   #black-drop {
     background-color: black;
     height: 200vw;
-    width: calc(85% - 400px);
+    width: calc(85% - 300px);
     position: absolute;
     top: 0;
     right: 0;
@@ -62,7 +63,6 @@ html {
   #landing-head {
     font-size: 5em;
     color:white;
-
   }
 }
 
