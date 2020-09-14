@@ -196,3 +196,15 @@ code {
   border-radius: 6px;
   padding: 6px
 }
+
+.tag-box {
+margin-bottom: 1em;
+}
+
+.tag {
+  background-color: #a3a3a3;
+  color: #202020;
+  padding: 0.3em 1em;
+  border-radius: 20000px;
+  margin-right: 11px;
+}
