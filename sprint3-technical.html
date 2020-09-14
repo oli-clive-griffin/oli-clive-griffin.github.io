@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>📝 Blog </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+  </head>
+    <body>
+      <div id="top-bar"> 
+        <p id="top-bar-head"> Oli Clive-Griffin </p>
+      </div>
+      <div id="mid">
+        <div id="top-container">
+          <h2 ><a class="navbar-link" href="blog.html"> &lt;----------</a></h2>
+        </div>
+        <div id="navbar">
+          <div id="titles">
+            <h2><a class="current-navbar-link" href="blog.html">📝 Blog </a></h2>
+            <h2><a class="navbar-link"href="blog.html">📚 What I'm Reading </a></h2>
+            <h2><a class="navbar-link"href="blog.html">🤖 My Work </a></h2>
+          </div>
+        </div>
+        <div id="right-container"> 
+          <section class="blog-post">
+            <h1 class="blog-post-title"> Sprint 3 - Technical Blog </h1>
+            <heading class="blog-post-date"> Monday September 14 </heading>
+            <article>
+              <h3>HTML vs. CSS</h3>
+              
+              <p>A website&rsquo;s main purpose is to display information. But if the information isn&rsquo;t displayed in a nice way, no-one is ever going to pay attention. Websites ideally are full of useful information, displayed in an aesthetically pleasing way that is intuitive, easy to read, and easy to navigate around.</p>
+
+              <p>Think of a website as a house. To build a house, we need a lot of raw materials, and we need to put them together. HTML represents all the raw materials. All together in one big pile. Technically, everything is there, but it&rsquo;s pretty ugly, with all the parts just stacked on top of each other.</p>
+
+              <p>CSS is the blueprint. It details how to put the parts of the house together to build a beautiful house. Where the rooms will be, what colour the walls are, and where to place windows.&nbsp;</p>
+
+              <p>The browser is represented by the builders. They get all the parts of the house and piece them together in such a way to create a beautiful house. Technically, the builders haven't added any parts but they have put them all together properly.</p>
+              <br />
+              <br />
+
+              <h3>Control Flow and Loops</h3>
+
+              <p>We use javascript to tell the browser what to do. However we can only tell it once. The computer can never come back and ask us, &ldquo;what do I do now?&rdquo; or &ldquo;that didn&rsquo;t work, what should I do instead?&rdquo;. Because of this, we often need to give the computer a lot of instructions, using <strong>flow control </strong>and <strong>looping</strong> to deliver those instructions.</p>
+
+              <p>Imagine you&rsquo;re at the gym and you want to do 3 sets of bicep curls. The &lsquo;code&rsquo; or instructions for doing that, might look something like this:&nbsp;</p>
+
+              <ol>
+                <li>Pick up the dumbbells</li>
+                <li>Bending your arms at the elbows, raise the weights.</li>
+                <li>If you can&rsquo;t raise the weights put them back down and go to step 6</li>
+                <li>Lower the weights back down, straightening your arms</li>
+                <li>Repeat steps 2 through 4 until you put the weights down</li>
+                <li>Rest for 2 minutes</li>
+                <li>If you got less than 8 reps in your last set, lower the weight</li>
+                <li>If you got more than 15 reps in your last set, increase the weight</li>
+                <li>Repeat steps 1 through 7, 3 times</li>
+              </ol>
+
+              <p>Since we don&rsquo;t know how many reps we&rsquo;re going to be able to do, we have to use conditional statements and looping to control the flow of the instructions. The conditional statement is step 3: &ldquo;If you can&rsquo;t raise the weights put them back down and go to step 6&rdquo;. The looping is step 5: Repeat steps 2 through 4 until you put the weights down&rdquo;. By combining a conditional statement with a loop, we create a very flexible set of instructions that change in response to the person doing the exercise. If we were to simply say, lift the weight 8 times, or even worse, if we wrote out lines 2 and 4, 8 whole times, we would not only have a far longer set of instructions than we need, we could also run into other problems. For example, what if the weight is too heavy, and after 6 reps, we simply can&rsquo;t lift it anymore. We would be stuck and not know what to do, unable to complete the next instruction. Flow control eliminates this problem by repeating steps until certain condition is met, then moving on to the next step.</p>
+              <br />
+              <br />
+
+              <h3>The DOM</h3>
+
+              <p>If the HTML is the raw materials, CSS is the plan, and the browser is the builders, then the DOM is the finished house especially with regard to layout and structure. We can interact with the DOM using other programming languages like javascript. In the house you might say:</p>
+
+              <ol>
+                <li>go in the front door,&nbsp;</li>
+                <li>go to the kitchen,&nbsp;</li>
+                <li>open the top-left drawer,&nbsp;</li>
+                <li>grab a spoon</li>
+              </ol>
+              
+              <p>In a website, you might have some javascript that says:</p>
+
+              <ol>
+                <li>Go to the document</li>
+                <li>Go to the body</li>
+                <li>Go to the header</li>
+                <li>Grab the title text</li>
+              </ol>
+
+              <p>It&rsquo;s important to notice that in each case, we are starting at the most general and, level by level, focussing in and getting more and more specific. This is because the DOM is arranged like a tree, with each node being within the last.</p>
+              <br />
+              <br />              
+
+              <h3>Accessing Data</h3>
+
+              <p>When we traverse the DOM, usually, the data we access will be an array or an object. Two very common examples of this are the two methods .getElementById and .getElementsByClass. When we retrieve an element by it&rsquo;s ID, we will be given the single element as an object. Because in HTML, only one element should ever have a single ID. data in objects are stored as key-value pairs, this means every piece of information stored in the object has a key (eg. couch) and a value (eg. color) to access the data in an object, we just need a key to ask for and we will be given the value associated with that key.</p>
+              
+              <div class='code'>
+                <code>getElementById.couch.color = brown</code>
+              </div>
+              
+              <p>However, when we get elements by class, we will be given an array of objects, as a class is intended to apply to multiple elements in html. These objects are not associated with a key, they are only accessible by number, 0 being the first object, 1 being the second, and so on. To access a specific object within an array, we input the corresponding number. To access a specific property of that object, we can then input a key (eg. color) and will be given the associated value.</p>
+
+              <div class='code'>
+                <code>getElementsByClass.loungeFurniture = [couch, coffeeTable, Shelf]</code>
+                <br />
+
+                <code>getElementsByClass.parent[0] = couch</code>
+                <br />
+
+                <code>getElementsByClass.parent[0].color = brown</code>
+              </div>
+              
+              <br />
+              <br />
+
+              <h3>Functions</h3>
+
+              <p>When we want to perform the same operation over and over again, but with different inputs, it can be helpful to use a function. Think of a function as a pre-packaged set of code which you plug your own inputs into.</p>
+
+              <div class='code'>
+                <code>Function addTwo (num) {</code>
+                <br /> 
+                <code>Return num + 2</code>
+                <br /> 
+                <code>}</code>
+              </div>
+
+              <p>The code above creates a function called addTwo which, when given a number (num) adds 2 to it and then gives it back. This is very useful because we can now &lsquo;call&rsquo; the function at any time we like, inputting whatever number we&rsquo;d like.</p>
+
+              <div class='code'>
+                <code>addTwo(44)</code>
+              </div>
+
+              <p>The above code will return 46, as we&rsquo;re feeding the number 44 into the function addTwo.</p>
+              
+              <p>Functions are incredibly useful because they allow us to write code once, then execute it whenever we want without writing it all out again.</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </body>
+</html>
+
+

@@ -184,3 +184,15 @@ img, video {
   margin: auto;
 
 }
+
+code {
+  color: #363636;
+}
+
+.code {
+  background-color: #dddddd;
+  width: 100%; 
+  max-width: 600px;
+  border-radius: 6px;
+  padding: 6px
+}
