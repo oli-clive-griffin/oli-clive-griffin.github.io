@@ -42,10 +42,11 @@ html {
   }
 
   .blog-box {
-    height: auto;
+    height: 300px;
     padding: 0px;
     position: relative;
     top:0px;
+    overflow: hidden;
   }
 
   #opaque {
