@@ -2,7 +2,7 @@ html {
   font-family: sans-serif;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1501px) {
   #mid { 
     margin: 320px auto;
     width: 70%;
@@ -61,6 +61,64 @@ html {
   }
 }
 
+@media (max-width:1500px) and (min-width:801px) {
+  #mid { 
+    margin: 320px auto;
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 120px auto;    
+    grid-template-columns: 280px auto;
+    grid-template-areas: 
+      "a b";
+  }
+
+  #top-container {
+    width:auto;
+    height: 170px;
+    position: fixed;
+    top: 150px;
+    left: 15%;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 320px;
+    left: 15%;
+  }
+
+  #right-container {
+    grid-area: b;
+  }
+
+  #blog-box-container {
+    grid-area: b;
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns:;
+    row-gap:20px;
+  }
+
+  .blog-box {
+    height: 300px;
+    padding: 0px;
+    position: relative;
+    top:0px;
+    overflow: hidden;
+  }
+
+  #opaque {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 800px) {
   #mid { 
     margin: 30px auto;
@@ -70,7 +128,6 @@ html {
       "a"
       "b"
       "c";
-      
   }
 
   #top-container {
@@ -79,11 +136,6 @@ html {
 
   #navbar {
     grid-area: b;
-  }
-
-  #right-container {
-    grid-area: c;
-    row-gap:10px;
   }
 
   #index-top-container {
@@ -101,10 +153,18 @@ html {
   }
 
   .blog-box {
-    height: auto;
+    height: 300px;
     padding: 0px;
     position: relative;
     top:0px;
+    overflow: hidden;
+  }
+
+  #blog-box-container {
+    grid-area: c;
+    display: grid;
+    grid-template-rows: min-content;
+    row-gap:20px;
   }
 
   #opaque {
