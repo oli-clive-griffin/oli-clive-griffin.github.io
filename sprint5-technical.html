@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>📝 Blog </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="minesweeper.css">
+
+</head>
+
+<body>
+  <div id="top-bar">
+    <p id="top-bar-head"> Oli Clive-Griffin </p>
+  </div>
+  <div id="mid">
+    <div id="top-container">
+      <h2><a class="navbar-link" href="blog.html"> &lt;----------</a></h2>
+    </div>
+    <div id="navbar">
+      <div id="titles">
+        <h2><a class="current-navbar-link" href="blog.html">📝 Blog </a></h2>
+        <h2><a class="navbar-link" href="blog.html">📚 What I'm Reading </a></h2>
+        <h2><a class="navbar-link" href="blog.html">🤖 My Work </a></h2>
+      </div>
+    </div>
+    <div id="right-container">
+
+      <section class="blog-post">
+
+        <h1 class="blog-post-title">Minesweeper</h1>
+
+        <div class="tag-box">
+          <span class="tag"> Sprint 5 </span>
+          <span class="tag"> tech </span>
+        </div>
+
+        <heading class="blog-post-date"> Thursday 1 septmeber, 2020 </heading>
+
+        <article>
+          <h2></h2>
+
+          <p></p>
+
+          <div id ="mid-container">
+            <div id="message"></div>
+            <div id="notes"></div>
+            <div id="container">
+              <label for="quantity">Board Dimensions</label>
+      
+              <select name="size" id="boardSize">
+                <option value=3>3x3</option>
+                <option value=4>4x4</option>
+                <option value=5>5x5</option>
+                <option value=6>6x6</option>
+              </select>
+      
+              <button id="startButton" onclick="setGame()"> Reset </button>
+            </div>
+            <div class="board"></div>
+          </div>
+
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script src="lib/tests.js"></script>
+<script src="lib/lib.js"></script>
+<script src="minesweeper.js"></script>
